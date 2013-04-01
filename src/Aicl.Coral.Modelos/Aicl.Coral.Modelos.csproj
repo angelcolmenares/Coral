@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>10.0.0</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{652E35F7-1B3B-4F75-93C2-F9CA1FD01066}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <RootNamespace>Aicl.Coral.Modelos</RootNamespace>
+    <AssemblyName>Aicl.Coral.Modelos</AssemblyName>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>True</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>False</Optimize>
+    <OutputPath>bin\Debug</OutputPath>
+    <DefineConstants>DEBUG;</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>False</ConsolePause>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>none</DebugType>
+    <Optimize>True</Optimize>
+    <OutputPath>bin\Release</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>False</ConsolePause>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="ServiceStack.Interfaces">
+      <HintPath>..\..\lib\ServiceStack.Interfaces.dll</HintPath>
+    </Reference>
+    <Reference Include="ServiceStack.OrmLite">
+      <HintPath>..\..\lib\ServiceStack.OrmLite.dll</HintPath>
+    </Reference>
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="ServiceStack.Common">
+      <HintPath>..\..\lib\ServiceStack.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="ServiceStack.Text">
+      <HintPath>..\..\lib\ServiceStack.Text.dll</HintPath>
+    </Reference>
+    <Reference Include="Cayita.Tools">
+      <HintPath>..\..\lib\Cayita.Tools.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Empresa.cs" />
+    <Compile Include="EmpresaCcf.cs" />
+    <Compile Include="Administradora.cs" />
+    <Compile Include="Candidato.cs" />
+    <Compile Include="Sucursal.cs" />
+    <Compile Include="UsuarioEmpresa.cs" />
+    <Compile Include="UsuarioSucursal.cs" />
+    <Compile Include="Actividades\Actividad.cs" />
+    <Compile Include="Actividades\ClaseCliente.cs" />
+    <Compile Include="Actividades\Grupo.cs" />
+    <Compile Include="Actividades\GrupoActividad.cs" />
+    <Compile Include="Actividades\GrupoUsuario.cs" />
+    <Compile Include="Actividades\TipoActividad.cs" />
+    <Compile Include="Auxiliares\Departamento.cs" />
+    <Compile Include="Auxiliares\Municipio.cs" />
+    <Compile Include="Auxiliares\Estado.cs" />
+    <Compile Include="Auxiliares\EstadoCivil.cs" />
+    <Compile Include="Auxiliares\NivelAcademico.cs" />
+    <Compile Include="Auxiliares\Pais.cs" />
+    <Compile Include="Auxiliares\Profesion.cs" />
+    <Compile Include="Auxiliares\Sanguineo.cs" />
+    <Compile Include="Auxiliares\ServicioAdministradora.cs" />
+    <Compile Include="Auxiliares\TipoDocumento.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Routes\Empresa.Routes.cs" />
+    <Compile Include="Routes\UserLogin.cs" />
+    <Compile Include="LoginResponse.cs" />
+    <Compile Include="CentroSucursal.cs" />
+    <Compile Include="Centro.cs" />
+    <Compile Include="UsuarioCentroSucursal.cs" />
+    <Compile Include="Actividades\ActividadClase.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <ItemGroup>
+    <Folder Include="Actividades\" />
+    <Folder Include="Auxiliares\" />
+    <Folder Include="Properties\" />
+    <Folder Include="Routes\" />
+  </ItemGroup>
+</Project>

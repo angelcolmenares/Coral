@@ -1,0 +1,50 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Aicl.Coral.Modelos", "Aicl.Coral.Modelos\Aicl.Coral.Modelos.csproj", "{652E35F7-1B3B-4F75-93C2-F9CA1FD01066}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Aicl.Coral.DAL", "Aicl.Coral.DAL\Aicl.Coral.DAL.csproj", "{47A35E69-61B4-43E2-A809-8E371F4B36CA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Aicl.Coral.BL", "Aicl.Coral.BL\Aicl.Coral.BL.csproj", "{DA77AF3B-0973-4F7D-92B5-2153E3DDE63C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Aicl.Coral.Interface", "Aicl.Coral.Interface\Aicl.Coral.Interface.csproj", "{561C4732-6A65-4789-B28E-4085EC47C4B7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Aicl.Coral.HostWeb", "Aicl.Coral.HostWeb\Aicl.Coral.HostWeb.csproj", "{A132ED26-E237-48C9-A88B-45B5AC838230}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Aicl.Coral.Test1", "Aicl.Coral.Test1\Aicl.Coral.Test1.csproj", "{62587FF3-C44F-452A-9393-091234900CAD}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x86 = Debug|x86
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{47A35E69-61B4-43E2-A809-8E371F4B36CA}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{47A35E69-61B4-43E2-A809-8E371F4B36CA}.Debug|x86.Build.0 = Debug|Any CPU
+		{47A35E69-61B4-43E2-A809-8E371F4B36CA}.Release|x86.ActiveCfg = Release|Any CPU
+		{47A35E69-61B4-43E2-A809-8E371F4B36CA}.Release|x86.Build.0 = Release|Any CPU
+		{561C4732-6A65-4789-B28E-4085EC47C4B7}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{561C4732-6A65-4789-B28E-4085EC47C4B7}.Debug|x86.Build.0 = Debug|Any CPU
+		{561C4732-6A65-4789-B28E-4085EC47C4B7}.Release|x86.ActiveCfg = Release|Any CPU
+		{561C4732-6A65-4789-B28E-4085EC47C4B7}.Release|x86.Build.0 = Release|Any CPU
+		{62587FF3-C44F-452A-9393-091234900CAD}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{62587FF3-C44F-452A-9393-091234900CAD}.Debug|x86.Build.0 = Debug|Any CPU
+		{62587FF3-C44F-452A-9393-091234900CAD}.Release|x86.ActiveCfg = Release|Any CPU
+		{62587FF3-C44F-452A-9393-091234900CAD}.Release|x86.Build.0 = Release|Any CPU
+		{652E35F7-1B3B-4F75-93C2-F9CA1FD01066}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{652E35F7-1B3B-4F75-93C2-F9CA1FD01066}.Debug|x86.Build.0 = Debug|Any CPU
+		{652E35F7-1B3B-4F75-93C2-F9CA1FD01066}.Release|x86.ActiveCfg = Release|Any CPU
+		{652E35F7-1B3B-4F75-93C2-F9CA1FD01066}.Release|x86.Build.0 = Release|Any CPU
+		{A132ED26-E237-48C9-A88B-45B5AC838230}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{A132ED26-E237-48C9-A88B-45B5AC838230}.Debug|x86.Build.0 = Debug|Any CPU
+		{A132ED26-E237-48C9-A88B-45B5AC838230}.Release|x86.ActiveCfg = Release|Any CPU
+		{A132ED26-E237-48C9-A88B-45B5AC838230}.Release|x86.Build.0 = Release|Any CPU
+		{DA77AF3B-0973-4F7D-92B5-2153E3DDE63C}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{DA77AF3B-0973-4F7D-92B5-2153E3DDE63C}.Debug|x86.Build.0 = Debug|Any CPU
+		{DA77AF3B-0973-4F7D-92B5-2153E3DDE63C}.Release|x86.ActiveCfg = Release|Any CPU
+		{DA77AF3B-0973-4F7D-92B5-2153E3DDE63C}.Release|x86.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(MonoDevelopProperties) = preSolution
+		StartupItem = Aicl.Coral.HostWeb\Aicl.Coral.HostWeb.csproj
+	EndGlobalSection
+EndGlobal
