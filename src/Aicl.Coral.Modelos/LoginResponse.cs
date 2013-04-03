@@ -11,6 +11,9 @@ namespace Aicl.Coral.Modelos
 			SucursalesAutorizadas = new List<SucursalAutorizada> ();
 		}
 
+		public string DisplayName { get; set; }
+		public string Email { get; set; }
+
 		public Empresa Empresa { get; set; }
 
 		public List<Centro> Centros { get; set; }

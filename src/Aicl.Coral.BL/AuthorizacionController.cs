@@ -5,6 +5,7 @@ using System.Collections.Generic;
 using System.Linq;
 using ServiceStack.OrmLite;
 using Cayita.Tools;
+using ServiceStack.FluentValidation;
 
 namespace Aicl.Coral.BL
 {
@@ -14,17 +15,13 @@ namespace Aicl.Coral.BL
 		{
 			return controler.Execute(proxy=>{
 				var empresa = proxy.FirstOrDefault<Empresa>(f=>f.Nit== user.Nit);
-
-				if( empresa==default(Empresa) )
-					throw new Exception("No existe empresa con NIT='{0}'".Fmt(user.Nit));
+				new EmpresaRule().ValidateAndThrow(empresa);
 
 				empresa.ConexionContabilidad="*";
 
 				var ue= proxy.FirstOrDefault<UsuarioEmpresa>(
 					f=> f.IdEmpresa== empresa.Id && f.IdUsuario== int.Parse(userId));
-
-				if( ue==default(UsuarioEmpresa) )
-				   throw new Exception("Usuario NO registrado en la empresa con NIT='{0}'".Fmt(user.Nit));
+				new UsuarioEmpresaRule().ValidateAndThrow(ue);
 
 				var sucursales = proxy.Read<Sucursal>(f=>f.IdEmpresa== empresa.Id);
 
@@ -175,4 +172,26 @@ namespace Aicl.Coral.BL
 
 		}
 	}
+
+
+	internal class EmpresaRule:AbstractValidator<Empresa>
+	{	
+		public EmpresaRule ()
+		{
+			RuleFor(x => x ).NotNull().
+				WithMessage("Empresa No Existe").
+					WithErrorCode("Not Found").WithName("Id");
+		}
+	}
+
+	internal class UsuarioEmpresaRule:AbstractValidator<UsuarioEmpresa>
+	{	
+		public UsuarioEmpresaRule ()
+		{
+			RuleFor(x => x ).NotNull().
+				WithMessage("Usuario no regitrado en la empresa").
+					WithErrorCode("Not Found").WithName("Id");
+		}
+	}
+
 }

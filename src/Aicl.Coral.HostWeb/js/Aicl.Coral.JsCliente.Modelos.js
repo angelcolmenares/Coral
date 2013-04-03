@@ -578,6 +578,8 @@
 	};
 	$Aicl_Coral_Modelos_UserLoginResponse.$ctor = function() {
 		var $this = {};
+		$this.DisplayName = null;
+		$this.Email = null;
 		$this.Empresa = null;
 		$this.Centros = null;
 		$this.SucursalesAutorizadas = null;
