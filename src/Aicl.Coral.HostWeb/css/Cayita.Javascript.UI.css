@@ -1,21 +1,14 @@
 /*------------------------------------------------------------------
-[ Widget / .widget ]
+[ c-panel / .c-panel ]
 */
-.widget {
+.c-panel {
   position: relative;
   clear: both;
   width: auto;
   margin-bottom: 2em;
-  /* Clearfix Hack */
-
-  /* Widget Table */
-
-  /* Widget Plain */
-
-  /* Widget Box */
-
 }
-.widget .widget-header {
+
+.c-panel .c-panel-header {
   position: relative;
   height: 40px;
   line-height: 40px;
@@ -49,7 +42,7 @@
   border-top-right-radius: 4px;
   -webkit-background-clip: padding-box;
 }
-.widget .widget-header h3 {
+.c-panel .c-panel-header h3 {
   top: 2px;
   position: relative;
   left: 10px;
@@ -61,8 +54,8 @@
   line-height: 18px;
   text-shadow: 1px 1px 2px rgba(255, 255, 255, 0.5);
 }
-.widget .widget-header [class^="icon-"],
-.widget .widget-header [class*=" icon-"] {
+.c-panel .c-panel-header [class^="icon-"],
+.c-panel .c-panel-header [class*=" icon-"] {
   display: inline-block;
   margin-left: 13px;
   margin-right: -2px;
@@ -70,7 +63,7 @@
   color: #555;
   vertical-align: middle;
 }
-.widget .widget-content {
+.c-panel .c-panel-content {
   padding: 20px 15px 15px;
   background: #FFF;
   border: 1px solid #D5D5D5;
@@ -78,7 +71,7 @@
   -webkit-border-radius: 5px;
   border-radius: 5px;
 }
-.widget .widget-header + .widget-content {
+.c-panel .c-panel-header + .c-panel-content {
   border-top: none;
   -webkit-border-top-left-radius: 0;
   -webkit-border-top-right-radius: 0;
@@ -87,53 +80,53 @@
   border-top-left-radius: 0;
   border-top-right-radius: 0;
 }
-.widget.widget-nopad .widget-content {
+.c-panel.c-panel-nopad .c-panel-content {
   padding: 0;
 }
-.widget .widget-content {
+.c-panel .c-panel-content {
   *zoom: 1;
 }
-.widget .widget-content:before,
-.widget .widget-content:after {
+.c-panel .c-panel-content:before,
+.c-panel .c-panel-content:after {
   display: table;
   content: "";
   line-height: 0;
 }
-.widget .widget-content:after {
+.c-panel .c-panel-content:after {
   clear: both;
 }
-.widget.widget-table .widget-content {
+.c-panel.c-panel-table .c-panel-content {
   padding: 0;
 }
-.widget.widget-table .table {
+.c-panel.c-panel-table .table {
   margin-bottom: 0;
   border: none;
 }
-.widget.widget-table .table tr td:first-child,
-.widget.widget-table .table tr th:first-child {
+.c-panel.c-panel-table .table tr td:first-child,
+.c-panel.c-panel-table .table tr th:first-child {
   border-left: none;
 }
-.widget.widget-plain {
+.c-panel.c-panel-plain {
   background: transparent;
   border: none;
 }
-.widget.widget-plain .widget-content {
+.c-panel.c-panel-plain .c-panel-content {
   padding: 0;
   background: transparent;
   border: none;
 }
-.widget.widget-box .widget-content {
+.c-panel.c-panel-box .c-panel-content {
   background: #E3E3E3;
   background: #FFF;
 }
 
 /*------------------------------------------------------------------
-[ Shortcuts / .shortcuts ]
+[ c-icons / .c-icons ]
 */
-.shortcuts {
+.c-icons {
   text-align: center;
 }
-.shortcuts .shortcut {
+.c-icons .c-icon {
   width: 110px;
   display: inline-block;
   padding: 12px 0;
@@ -153,14 +146,14 @@
   box-sizing: border-box;
   border-radius: 5px;
 }
-.shortcuts .shortcut .shortcut-icon {
+.c-icons .c-icon .c-icon-icon {
   width: 100%;
   margin-top: .25em;
   margin-bottom: .35em;
   font-size: 32px;
-  color: #555;
+  color: #556;
 }
-.shortcuts .shortcut:hover {
+.c-icons .c-icon:hover {
   background: #E8E8E8;
   background-color: #f0f0f0;
   background-image: -moz-linear-gradient(top, #fafafa, #e1e1e1);
@@ -171,45 +164,17 @@
   background-repeat: repeat-x;
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#fffafafa', endColorstr='#ffe1e1e1', GradientType=0);
 }
-.shortcuts .shortcut:hover .shortcut-icon {
-  color: #666;
+.c-icons .c-icon:hover .c-icon-icon {
+  color: #667;
 }
-.shortcuts .shortcut-label {
+.c-icons .c-icon-label {
   display: block;
   font-weight: 400;
-  color: #666;
+  color: #667;
 }
 
-
-/*------------------------------------------------------------------
-[ Stacked / .stacked ]
-*/
-.stacked {
-  position: relative;
-}
-.stacked:after,
-.stacked:before {
-  content: '';
-  position: absolute;
-  display: block;
-  height: 1px;
-  bottom: -2px;
-  left: 3px;
-  right: 3px;
-  background-color: #ffffff;
-  -webkit-border-radius: 0 0 3px 3px;
-  -moz-border-radius: 0 0 3px 3px;
-  border-radius: 0 0 3px 3px;
-  border: 1px solid #d3d3d3;
-  border-top: 0;
-}
-.stacked:before {
-  bottom: -4px;
-  left: 6px;
-  right: 6px;
-}
-
-.overlay {
+/*------------------------------------------------------------------ */
+.c-overlay {
  position: fixed;
  height: 100%;
  z-index: 10000;
