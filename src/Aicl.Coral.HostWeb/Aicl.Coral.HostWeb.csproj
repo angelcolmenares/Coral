@@ -111,6 +111,8 @@
     <Content Include="js\jquery.validate.min.js" />
     <Content Include="js\linq.min.js" />
     <Content Include="js\mscorlib.min.js" />
+    <Content Include="js\move.js" />
+    <Content Include="css\Cayita.Javascript.UI.css" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Global.asax.cs">
