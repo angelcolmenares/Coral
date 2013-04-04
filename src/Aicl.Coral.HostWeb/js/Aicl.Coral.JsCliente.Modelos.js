@@ -84,6 +84,20 @@
 		return $this;
 	};
 	////////////////////////////////////////////////////////////////////////////////
+	// Aicl.Coral.Modelos.AppStore
+	var $Aicl_Coral_Modelos_AppStore$1 = function(T) {
+		var $type = function() {
+			ss.makeGenericType(Cayita.Data.Store$1, [T]).call(this);
+		};
+		ss.registerGenericClassInstance($type, $Aicl_Coral_Modelos_AppStore$1, [T], function() {
+			return ss.makeGenericType(Cayita.Data.Store$1, [T]);
+		}, function() {
+			return [ss.IEnumerable, ss.IEnumerable, ss.ICollection, ss.IList];
+		});
+		return $type;
+	};
+	ss.registerGenericClass(global, 'Aicl.Coral.Modelos.AppStore$1', $Aicl_Coral_Modelos_AppStore$1, 1);
+	////////////////////////////////////////////////////////////////////////////////
 	// Aicl.Coral.Modelos.Candidato
 	var $Aicl_Coral_Modelos_Candidato = function() {
 	};
@@ -343,6 +357,23 @@
 		$this.Nombre = null;
 		return $this;
 	};
+	////////////////////////////////////////////////////////////////////////////////
+	// Aicl.Coral.Modelos.Factory
+	var $Aicl_Coral_Modelos_Factory$1 = function(T) {
+		var $type = function() {
+		};
+		$type.getStore = function() {
+			return $type.$store_ || ($type.$store_ = new (ss.makeGenericType($Aicl_Coral_Modelos_AppStore$1, [T]))());
+		};
+		ss.registerGenericClassInstance($type, $Aicl_Coral_Modelos_Factory$1, [T], function() {
+			return null;
+		}, function() {
+			return [];
+		});
+		$type.$store_ = null;
+		return $type;
+	};
+	ss.registerGenericClass(global, 'Aicl.Coral.Modelos.Factory$1', $Aicl_Coral_Modelos_Factory$1, 1);
 	////////////////////////////////////////////////////////////////////////////////
 	// Aicl.Coral.Modelos.Grupo
 	var $Aicl_Coral_Modelos_Grupo = function() {

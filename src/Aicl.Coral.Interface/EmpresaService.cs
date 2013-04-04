@@ -17,6 +17,12 @@ namespace Aicl.Coral.Interface
 			return empresa.Do (Controller);
 		}
 
+		public TList<Empresa> Get(EmpresaRead empresa)
+		{
+			return empresa.Do (Controller);
+		}
+
+
 		public Empresa Post (EmpresaUpdate empresa)
 		{
 			return empresa.Do (Controller);

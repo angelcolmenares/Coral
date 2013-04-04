@@ -113,6 +113,7 @@
     <Content Include="js\mscorlib.min.js" />
     <Content Include="js\move.js" />
     <Content Include="css\Cayita.Javascript.UI.css" />
+    <Content Include="js\Aicl.Coral.JsCliente.Modelos.js" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Global.asax.cs">
