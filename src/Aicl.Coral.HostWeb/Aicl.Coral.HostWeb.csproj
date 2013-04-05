@@ -114,6 +114,7 @@
     <Content Include="js\move.js" />
     <Content Include="css\Cayita.Javascript.UI.css" />
     <Content Include="js\Aicl.Coral.JsCliente.Modelos.js" />
+    <Content Include="js\Aicl.Coral.App.js" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Global.asax.cs">
